@@ -21,30 +21,7 @@ java -jar <runnable-app-jar-name.jar> with following arguments:
 Providing custom log4j2 config:
 java -Dlog4j.configurationFile=/path/to/alternate/config/file
 
-Properties (sample file located in app module folder):
-graylog.http.input.url = http://127.0.0.1:12201/gelf
-
-# fully qualified name of class implementing custom Graylog dispatcher
-# given class MUST extend org.graylog.interview.stuglik.api.graylog.AbstractGraylogDispatcher
-
-# custom.graylog.dispatcher.class =
-
-# fully qualified name of class implementing custom file processor
-# given class MUST extend org.graylog.interview.stuglik.api.files.AbstractFileProcessor
-
-# custom.file.processor.class = 
-
-
-###################################################################################
-### GELF Payload as defined at													###
-### https://docs.graylog.org/en/3.1/pages/gelf.html#gelf-payload-specification  ###
-################################################################################### 
-gelf.version = 1.1
-gelf.host = szymonstuglik.com
-gelf.short.message = Sample Short Message 
-gelf.full.message = Sample Full Message Send From Graylog CLI Client
-gelf.level = 1
-
+Properties - sample file located in app module folder
 
 Custom implementations:
 - File processor extend org.graylog.interview.stuglik.files.AbstractFileProcessor from 'api' module
