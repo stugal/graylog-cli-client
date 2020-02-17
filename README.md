@@ -21,7 +21,7 @@ java -jar <runnable-app-jar-name.jar> with following arguments:
 Providing custom log4j2 config:
 java -Dlog4j.configurationFile=/path/to/alternate/config/file
 
-Properties - sample file located in app module folder
+Properties - sample file located in app module folder, additional properties can be obtained from the ConfigManager via the ConfigProvider interface
 
 Custom implementations:
 - File processor extend org.graylog.interview.stuglik.files.AbstractFileProcessor from 'api' module
