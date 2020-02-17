@@ -14,9 +14,9 @@ implementations should be packaged into 'custom-impl.jar' and placed next to app
 
 Project usage:
 java -jar <runnable-app-jar-name.jar> with following arguments:
--h --help 
--fp --file-path - [required] path to file to be processed 
--prop --properties - [optional] path to properties, if not provided defaults will be used
+- -h --help 
+- -fp --file-path - [required] path to file to be processed 
+- -prop --properties - [optional] path to properties, if not provided defaults will be used
 
 Providing custom log4j2 config:
 java -Dlog4j.configurationFile=/path/to/alternate/config/file
